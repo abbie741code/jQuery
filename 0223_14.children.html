@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>children</title>
+</head>
+ <!-- 🌟2/23(三)  🕛11:32-11:40-->
+
+
+
+ <!--●.find()- 找條件相符子孫元素 -->
+  
+
+     🌟traversing遍歷🌟/Tree Traversa
+     ●.children()- 所有條件相符子元素(只找一層)
+     💕口語: 往下找子孫的概念
+
+<body>
+    <div class="wrap">
+        <ul class="level-1">
+            <li class="item01">item01</li>
+            <li class="item02">item02
+                <ul class="level-2">
+                    <li class="item001">item001</li>
+                    <li class="item002">item002
+                        <ul class="level-3">
+                            <li class="item0001">item0001</li>
+                            <li class="item0002">item0002</li>
+                            <li class="item0003">item0003</li>
+                        </ul>
+                    </li>
+                    <li class="item003">item003</li>
+                </ul>
+            </li>
+            <li class="item03">item03</li>
+        </ul>
+    </div>
+    <!-- 🌟Find比children更常用 -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        // $('.level-1').children('li').css('outline', '1px solid red')
+        // $('.level-1').find('li').css('outline', '1px solid red')
+        $('.level-1').find('.item0002').css('outline', '1px solid red')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siblings</title>
+</head>
+<!-- 🌟2/23(三)  🕛13:50-13:56-->
+
+<body>
+    <div class="a1">
+        <div class="a11">a11</div>
+    </div>
+    <div class="a2">
+        <div class="a22">a22</div>
+    </div>
+    <div class="a3">
+        <div class="a33">33</div>
+    </div>
+    <div class="a4">
+        <div class="a44">a44</div>
+    </div>
+    <div class="a5">
+        <div class="a55">a55</div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.a33').parent().siblings().children().css('background', 'red')
+    </script>
+</body>
+
+</html>

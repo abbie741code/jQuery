@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- ⚠️checkbox 
+        回家再看一次--回過神來,老師已教完-->
+
+    <style>
+        label {
+            background-color: rgb(42, 221, 72);
+        }
+
+        input[type="checkbox"]+span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid red;
+            border-radius: 20%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="checkbox"]+span>i {
+            /* background-color: red; */
+            display: none;
+        }
+
+        input[type="checkbox"]:checked+span>i {
+            /* background-color: red; */
+            display: block;
+        }
+    </style>
+</head>
+
+<!-- 🌟點到附近,就會打勾,不一定要對準。(然後hidden隱藏起來,使用者看不到) -->
+<body>
+    <label>
+        <input type="checkbox" hidden>
+        <span><i class="fa-solid fa-check"></i></span>
+    </label>
+
+</body>
+
+</html>

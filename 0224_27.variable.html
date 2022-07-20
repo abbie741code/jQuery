@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+
+<!-- ⚠️回家聽回放 -->
+
+<body>
+    <h1>0</h1>
+    <button>+</button>
+
+
+    <script>
+        // 宣告變數
+        // VAR, ES5 版本用 
+        // LET, CONST ES6 新的宣告方法
+
+        var x = 10;
+
+        console.log('x', x);
+
+        var y = x * 2;
+
+        console.log('y', y);
+
+
+
+
+    </script>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        console.log('myx', x);
+
+        var myClick = 0;
+
+        $('button').click(function () {
+            console.log('hi');
+            myClick = myClick + 1;
+            console.log('myClick', myClick);
+            $('h1').text(myClick)
+        })
+    </script>
+</body>
+
+</html>

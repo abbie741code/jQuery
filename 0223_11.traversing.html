@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traversing</title>
+    <!-- 🌟2/23(三) traversing遍歷 🕛10:45-10:52-->
+    <!-- 雖然結果一樣, 但選取的過程有差 -->
+    <!-- ptt:p.27 28  -->
+    <!-- 
+    ●.eq()- 選取第 n 個
+    ●.even()- 選取第偶數個 (從零開始計算)
+    ●.odd()- 選取第奇數個 (從零開始計算)
+    ●.first()- 選取第一個
+    ●.last()- 選取最後一個 -->
+
+    🌟Keyword:
+    -移動的概念
+    -從多到少
+    -產地履歷的概念
+
+
+</head>
+
+<body>
+    <div class="btn">btn1</div>
+    <div class="btn">btn2</div>
+    <div class="btn">btn3</div>
+    <div class="btn">btn4</div>
+    <div class="btn">btn5</div>
+    <div class="btn">btn6</div>
+
+    <div class="btns">btns1</div>
+    <div class="btns">btns2</div>
+    <div class="btns">btns3</div>
+    <div class="btns">btns4</div>
+    <div class="btns">btns5</div>
+
+    <div id="myRoot">root</div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- (🌟程式第0個就是第1個) -->
+    <script>
+        $('.btn').eq(0).css('background', 'red')
+    </script>
+</body>
+
+</html>

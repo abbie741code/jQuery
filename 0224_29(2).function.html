@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<!-- ⚠️回家聽回放  -->
+
+
+<body>
+    <script>
+        // 匿名函式，只用一次，通常是希望立即執行
+        // 任何函式的執行方法，都是在後面加小括號
+        (function (x, y) {
+            console.log('x+y:', x + y);
+        })(1, 2);
+
+
+        // function add(x, y) {
+        //     return x + y;
+        // }
+
+        var add = function (x, y) {
+            return x + y;
+        }
+
+        function minus(x, y) {
+            return x - y;
+        }
+
+        var result = add(50, 50);
+        // .css('background', 'red');
+        console.log('result:', result);
+
+        var result2 = minus(50, 20);
+        console.log('result:', result2);
+
+
+        // <!-- 2/24(四) ⚡️10:44-10:54老師回來講程式的部分：val() -->
+        // 🔥這是一個object, 有key 有value (可去goodnotes看筆記)
+
+
+        var myjQuery = {
+
+            'css': function (x, y) {
+                console.log('x:', x);
+                console.log('y:', y);
+
+                // 用 if 去判斷要執行甚麼不同的功能
+                if (x) {
+                    console.log('要修改');
+                }
+                else {
+                    console.log('要拿值');
+                }
+            }
+
+        }
+
+        myjQuery.css()
+
+
+    </script>
+</body>
+
+</html>

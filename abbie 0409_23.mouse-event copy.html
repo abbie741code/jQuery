@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+    <!-- 🌟2/23(三)  🕛14:18-14:23 mouse event-->
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            outline: 1px solid red;
+            transition: .5s;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            outline: 1px solid rgb(153, 135, 135);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- 🌟console.log的使用目的就是把某個數值顯示在螢幕上。 -->
+    <!-- Ex: console.log(A) -->
+
+    <script>
+        // 先寫這條
+    // $('.box').click(function () {})
+
+        // 滑鼠點擊的時候:把box變大
+        $('.box').click(function () {
+            console.log('box clicked')
+            $('.box').css('width', '300px')
+        })
+        // ---------abbie practice 04/09---------------
+        $('.box2').click(function(){
+            console.log('box2 clicked')
+            $('.box2').css('width','500px')
+        })
+    </script>
+</body>
+
+</html>

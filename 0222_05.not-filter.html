@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+     <!-- ✨2/22(二) basic-filter 🕛11:45-11:50
+        ⚠️回家看回放 -->
+
+        <!-- ●:not()- 不選取某個狀態，範例為只有沒選取狀態下的 checkbox 旁的字會變色 -->
+</head>
+
+<!-- 🌟 這段要看懂🌟 -->
+
+<!-- 🌟CSS 選擇器中加號（+）和取代符號／波浪號（~）的意思
+https://pjchender.blogspot.com/2015/07/css_25.html
+https://pjchender.blogspot.com/2015/07/css_25.html?m=1 -->
+
+<!-- 🌟CSS選擇器中的大於（>）是什麼意思？
+https://pjchender.blogspot.com/2015/07/css.html -->
+
+<body>
+   
+
+
+    <div>
+        <input type="checkbox" name="alex">
+        <span>Alex</span>
+    </div>
+    <div>
+        <input type="checkbox" name="bill" checked>
+        <span>Bill</span>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        // $('input:checked + span').css('background', 'yellow') 
+
+        $('input:not(:checked) + span').css('background', 'yellow')
+        // $('input:not(:checked) + span').css('background', 'yellow')
+    </script>
+</body>
+
+</html>

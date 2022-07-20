@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next prev</title>
+</head>
+<!-- 🌟2/23(三)  🕛13:40-13:47-->
+
+ <!-- 🌟traversing遍歷🌟/Tree Traversa -->
+ <!-- 💕口語: 往上找爸爸爺爺的概念 -->
+ 🌟traversing遍歷-next prev
+
+
+<body>
+    <div class="wrap">
+        <ul class="level-1">
+            <li class="item01">item01</li>
+            <li class="item02">item02
+                <ul class="level-2">
+                    <li class="item001">item001</li>
+                    <li class="item002">item002
+                        <ul class="level-3">
+                            <li class="item0001">item0001</li>
+                            <li class="item0002">item0002</li>
+                            <li class="item0003">item0003</li>
+                        </ul>
+                    </li>
+                    <li class="item003">item003</li>
+                </ul>
+            </li>
+            <li class="item03">item03</li>
+        </ul>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+
+    // 💕item0002的親爸是<ul class="level-3">
+        $('.item0002').parent().css('outline','1px solid red')
+        // $('.item0002').closest('.item02').prev().css('outline', '1px solid red')
+        // $('.item0002').next().prevAll().css('outline', '1px solid red')
+        // $('.item0001').nextUntil('.item0003').css('outline', '1px solid red')
+    </script>
+</body>
+
+</html>

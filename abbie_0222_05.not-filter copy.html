@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+     <!-- ✨2/22(二) basic-filter 🕛11:45-11:50
+        ⚠️回家看回放 -->
+
+        <!-- ●:not()- 不選取某個狀態，範例為只有沒選取狀態下的 checkbox 旁的字會變色 -->
+
+        <!-- ✔️參考網站: https://ithelp.ithome.com.tw/articles/10244023 -->
+</head>
+
+<!-- 🌟 這段要看懂🌟 -->
+<body>
+   
+    <input type="email" placeholder="name">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="password">
+    <input type="tel">
+    <input type="range">
+    <input type="search">
+
+    <div>
+        <input type="checkbox" name="alex">
+        <span>Alex</span>
+    </div>
+    <div>
+        <input type="checkbox" name="bill" checked>
+        <span>Bill</span>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        // $('input:checked + span').css('background', 'yellow') 
+
+        $('input:not(:checked) + span').css('background', 'yellow')
+        // $('input:not(:checked) + span').css('background', 'yellow')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traversing</title>
+</head>
+ <!-- 🌟2/23(三) traversing遍歷 🕛10:47-11:30-->
+ 移動的概念
+
+<body>
+    <div class="btn">btn1</div>
+    <div class="btn">btn2</div>
+    <div class="btn">btn3</div>
+    <div class="btn">btn4</div>
+    <div class="btn">btn5</div>
+    <div class="btn">btn6</div>
+
+    <div class="btns">btns1</div>
+    <div class="btns">btns2</div>
+    <div class="btns">btns3</div>
+    <div class="btns">btns4</div>
+    <div class="btns">btns5</div>
+
+    <div id="myRoot">root</div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    
+    <!--1. ('.btn')--btn背景要變成藍色
+        2. .even()--偶數不管第幾個都要變成綠色
+        3. .eq(2)-- -->
+    <script>
+        $('.btn').css('background','blue').even().css('background','green').eq(2).css('background','pink')
+    </script>
+</body>
+
+</html>
